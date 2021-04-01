@@ -1,0 +1,155 @@
+@import 'import/reset.scss';
+@import 'import/_color.scss';
+
+
+
+
+
+
+
+
+/*------------------------
+main code start here 
+-------------------------*/
+
+//header_top
+#header_top{
+   background: $mainColor;
+   padding: 10px 0px;
+   .header_left{
+      p{
+         color: #fff;
+         font-weight: 600;
+         font-size: 14px;
+         span{
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background: $titleColor;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 30px;
+            margin-right: 4px;
+         }
+      }
+   }
+   .middle_header{
+      ul{
+         li{
+            display: inline-block;
+            margin: 0px 10px;
+            a{
+               color: #fff;
+               font-weight: 600;
+               font-size: 14px;
+               i{
+                  margin-right: 4px;
+               }
+               &:hover{
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+   }
+   .header_right{
+      ul{
+         li{
+            display: inline-block;
+            margin-left: 15px;
+            a{
+               color: #fff;
+               font-size: 20px;
+            }
+         }
+      }
+   }
+}
+
+//menu_area
+#menu_area{
+   .menu_link_area{
+      ul{
+         li{
+            display: inline-block;
+            margin: 0px 5px;
+            position: relative;
+            a{
+               font-weight: 600;
+               font-size: 16px;
+               display: block;
+               padding: 30px 10px;
+               i{
+                  margin-left: 6px;
+               }
+               &:hover{
+                  color: $mainColor;
+               }
+            }
+            ul{
+               position: absolute;
+               width: max-content;
+               box-shadow: 0px 23px 46px rgba(0,0,0,0.2);
+               opacity: 0;
+               visibility: hidden;
+               transition: opacity 200ms;
+               li{
+                  display: block;
+                  text-align: left !important;
+                  margin: 0;
+                  a{
+                     padding: 9px 10px;
+                     font-size: 14px;
+                     &:hover{
+                        background-color: $mainColor;
+                        color: #fff;
+                     }
+                  }
+               }
+            }
+            &:hover{
+               >a{
+                  color: $mainColor;
+               }
+               ul{
+                  opacity: 1;
+                  visibility: visible;
+               }
+            }
+         }
+      }
+   }
+   .right_menu_quote{
+      a{
+         display: block;
+         background: $titleColor;
+         text-align: center;
+         color: #fff;
+         font-weight: 600;
+         font-size: 14px;
+         padding: 12px 0px;
+         border-radius: 4px;
+         &:hover{
+            box-shadow: 0px 23px 46px rgba(0,0,0,0.2);
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
