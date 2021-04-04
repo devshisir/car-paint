@@ -326,6 +326,9 @@ main code start here
          ul{
             li{
                color: #fff;
+               span{
+                  display: inline-block;
+               }
                i{
                   display: inline-block;
                   height: 40px;
@@ -375,6 +378,7 @@ main code start here
          font-weight: 700;
          font-size: 20px;
          color: $titleColor;
+         display: inline-block;
       }
    }
    .package_slider_area{
